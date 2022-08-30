@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="thumbNailCarousel.css">
+  <script src="thumbNailCarousel.js" defer></script>
+</head>
+
+<body>
+  <div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p id="imgtext">Click on the images below:</p>
+  </div>
+
+  <div class="container" data-carousel>
+    <span onclick="this.parentElement.style.display='none'"
+      class="closebtn">&times;</span>
+    <button class="carousel-button prev"
+      data-carousel-button="prev">&lt;</button>
+    <button class="carousel-button next"
+      data-carousel-button="next">&gt;</button>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+
+
+    <!-- The four columns -->
+    <div class="row">
+      <!-- <div class="column"> -->
+      <ul data-slides>
+        <li class="column" data-active>
+          <img src="photos/thum-nails/ai-ais-namibia-thum(1).jpg"
+            alt="Ai Ais Mountain View Room 1" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+        <li class="column">
+          <img src="photos/thum-nails/ai-ais-namibia-thum(2).jpg"
+            alt="Ai Ais Mountain View Room 2" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+        <li class="column">
+          <img src="photos/thum-nails/ai-ais-namibia-thum(3).jpg"
+            alt="Ai Ais Mountain View Room 3" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+        <li class="column">
+          <img src="photos/thum-nails/ai-ais-namibia-thum(4).jpg"
+            alt="Ai Ais Mountain View Room" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+        <li class="column">
+          <img src="photos/thum-nails/ai-ais-namibia-thum(5).jpg"
+            alt="Ai Ais Mountain View Room" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+        <li class="column">
+          <img src="photos/thum-nails/ai-ais-namibia-thum(6).jpg"
+            alt="Ai Ais Mountain View Room" style="width:100%"
+            onclick="myFunction(this);">
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

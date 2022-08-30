@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <title>
+    Ai Ais Hotsprings Resort Booking Form Fish River Canyon Namibia
+    Namibia Wildlife Resorts NWR
+  </title>
+  <meta name="keywords" content="Ai Ais Hotsprings Resort prices, Ai Ais
+      Hotsprings Resort NWR, Ai Ais Hotsprings Resort Namibia, Ai Ais Hotsprings
+      Resort rates">
+  <meta name="description" content="Rates and Prices for Ai Ais Hotsprings
+      Resort Fish River Canyon Namibia. Seasons and fees for accommodation at Ai
+      Ais Hotsprings Resort Fish River Canyon Namibia Namibia">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/spinner.css">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+
+<body onload="displayAccommodationTypes()">
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <h1>Namibia Wildlife Resorts (NWR) Booking Form</h1>
+      </div>
+    </header>
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <form id="contact-form">
+          <table>
+            <tr>
+              <td>
+                <label for="name"><strong>Your First Name(s):</strong></label>
+              </td>
+              <td>
+                <input type="text" id="name" name="name" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="surname"><strong>Your Surname:</strong></label>
+              </td>
+              <td>
+                <input type="text" name="surname" id="surname" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="nationality">
+                  <strong>Your Nationality: </strong>
+                </label>
+              </td>
+              <td>
+                <input type="text" name="nationality" id="nationality" value="">
+                Special rates are available for SADC passport holders.
+                Please include your nationality if you hold a passport from a
+                Southern African country.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="tel"><strong>Your Telephone Number:</strong></label>
+              </td>
+              <td>
+                <input type="text" name="tel" id="tel" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">
+                  <strong>Email Address:</strong> (*required field)
+                </label>
+              </td>
+              <td>
+                <input type="text" name="email" id="email" value=""
+                  onchange="checkEmail()">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="emailcheck">
+                  <strong>
+                    Please check &amp; re-type your email address:
+                  </strong>
+                </label>
+                <br>
+                (*required field)
+              </td>
+              <td>
+                <input type="text" name="emailcheck" id="emailcheck" size="40"
+                  value="" onfocusout="validateForm()">
+                <p>
+                  Note: we will be unable to reply to you if there is a
+                  mistake in your email address
+                </p>
+              </td>
+            </tr>
+          </table>
+          <tabel>
+            <section>
+              <h3>Please select which of the NWR resort(s) or rest camp(s) you
+                would like
+                to travel to and your preferred arrival and departure dates:
+              </h3>
+              <table>
+                <tr>
+                  <td>
+                    <p>
+                      <label for="resort1">
+                        <strong>
+                          Booking 1: Which Resort Would you like to travel to?
+                        </strong>
+                      </label>
+                      <select id="resort1" name="resort1"
+                        onchange="displayAccommodationTypes()">
+                        <option id="firstCamp"></option>
+                        <option value="Ai-Ais">Ai Ais - Fish River Canyon
+                        </option>
+                        <option value="Boplaas">Boplaas</option>
+                        <option value="Daan Viljoen">Daan Viljoen</option>
+                        <option value="Dead Valley Lodge">Dead Valley Lodge
+                        </option>
+                        <option value="Dolomite">Dolomite - Etosha</option>
+                        <option value="Duwisib">Duwisib Castle</option>
+                        <option value="Gross Barmen">
+                          Gross Barmen - Okahandja
+                        </option>
+                        <option value="Halali">Halali - Etosha</option>
+                        <option value="Hardap Resort">Hardap Resort</option>
+                        <option value="Hobas">
+                          Hobas Camp - Fish River
+                        </option>
+                        <option value="Jakkulsputz">Jakkulsputz</option>
+                        <option value="Khorixas">Khorixas Rest camp</option>
+                        <option value="Mile 14">Mile 14</option>
+                        <option value="Mile 72">Mile 72</option>
+                        <option value="Mile 108">Mile 108</option>
+                        <option value="Naukluft">
+                          Naukluft Camp
+                        </option>
+                        <option value="Namutoni">Namutoni - Etosha</option>
+                        <option value="Okaukuejo">Okaukuejo - Etosha</option>
+                        <option value="Olifantsrus">
+                          Olifantsrus Campsite - Etosha
+                        </option>
+                        <option value="Onkoshi">Onkoshi - Etosha</option>
+                        <option value="Popa Falls">Popa Falls Camp</option>
+                        <option value="Shark Island">
+                          Shark Island - Luderitz
+                        </option>
+                        <option value="Sesriem">Sesriem - Namib Desert</option>
+                        <option value="Sesriem Oshana">Sesriem Oshana</option>
+                        <option value="Sossus Dune">
+                          Sossus Dune Lodge - Namib Desert
+                        </option>
+                        <option value="Terrace Bay">Terrace Bay - Skeleton Coast
+                        </option>
+                        <option value="Torra Bay">Torra Bay - Skeleton Coast
+                        </option>
+                        <option value="Waterberg">Waterberg Camp</option>
+                        <option value="Windpomp 14">Windpomp 14</option>
+                      </select>
+                    </p>
+                  </td>
+                  <td>
+                    <label for="accomtype1">
+                      <strong>
+                        What Type of Accommodation do you require?
+                      </strong>
+                    </label>
+                    <select name="accomtype1" id="accomtype1">
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <p>Please enter the number of people travelling if different from
+                above:</p>
+              <table>
+                <tr>
+                  <td>
+                    <label for="adults1">
+                      <strong>Number of Adults Travelling:
+                      </strong>
+                    </label>
+                    <br>
+                    <input type="text" id="adults1" name="adults1">
+                  </td>
+                  <td>
+                    <label for="childnopay1">
+                      <strong>Number of Children aged 0 to 5:</strong>
+                    </label>
+                    <br>
+                    <input type="text" id="childnopay1" name="childnopay1">
+                  </td>
+                  <td>
+                    <label for="childhalfprice1">
+                      <strong>Number of Children aged 6 to 12:</strong>
+                    </label>
+                    <br>
+                    <input type="text" id="childhalfprice1"
+                      name="childhalfprice1">
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td>
+                    <label for="arriveday1">Arrival Date:</label>
+                    <br>
+                    <input name="arriveday1" id="arriveday1" type="date"
+                      value="">
+                  </td>
+                  <td>
+                    <label for="departday1">Departure Date:</label>
+                    <br>
+                    <input name="departday1" id="departday1" type="date"
+                      value="">
+                  </td>
+                </tr>
+              </table>
+
+            </section>
+          </tabel>
+          <!--Insert camp selection-->
+          <tabel id="add_extra_camp"></tabel>
+          <br />
+          <p class="button" onclick="addToCounter(), addACamp()">
+            click here to add a camp
+          </p>
+          <table>
+            <tr>
+              <td>
+                <strong>Comments:</strong>
+                <BR>
+                <textarea name="comments" id="comments"
+                  placeholder="Enter your message" rows="2">
+                  </textarea>
+                <br>
+                <input type="checkbox" name="newsletter" id="newsletter" value="I would like to receive your latest news and special
+                    offers by email.">
+                <label for="newsletter"> I would like to receive your latest
+                  news
+                  and special offers by email. </label>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <h3>Are you making a booking or requesting a quote?</h3>
+            <tr>
+              <td>
+                <input type="checkbox" name="book" id="book"
+                  value="Please book">
+                <label style="font-weight: bold; color: #000;" for="book">
+                  Please
+                  make a booking</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="quote" id="quote"
+                  value="Please quote">
+                <label style="font-weight: bold; color: #000;" for="quote">
+                  Please
+                  send me a quote</label>
+              </td>
+            </tr>
+          </table>
+          <input type="hidden" id="pageReferrer" name="pageReferrer">
+
+          <div class="d-flex justify-content-center">
+            <button type="button" class="button" data-toggle="modal"
+              data-target="#recapcha" style="display:none;" id="displayButton">
+              Submit
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-sm" tabindex="-1"
+            role="dialog" id="recapcha" style="width: max-content;"
+            aria-labelledby="recapcha" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <form method="post">
+                  <div class="g-recaptcha"
+                    data-sitekey="6LfO5IkdAAAAABzn2ZW3XdYEoMx44OlZdKC5PgRZ"
+                    data-callback="verifyCaptcha">
+                  </div>
+                  <!-- data-sitekey="6Lcb34kdAAAAAM9IeEMv-wuBExc_xTovzVCIJSy2" -->
+                  <div id="g-recaptcha-error"></div>
+                  <div class="d-flex justify-content-center" style="background-color: #808080;
+                      border: none;">
+                    <input type="submit" name="submit" class="btn btn-primary"
+                      style="margin: 5px 0 5px 0;">
+                  </div>
+                  <div id="loader"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- Footer -->
+        <footer id="footer">
+          <div class="inner">
+            <ul class="copyright" style="color: #000;">
+              <li>&copy; 2020 - 2022 </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="addAccomTypes.js"></script>
+  <script src="testAddACamp.js"></script>
+  <script src="newCustomerForm.js"></script>
+  <script src="setDefaultDate.js"></script>
+</body>
+
+</html>
